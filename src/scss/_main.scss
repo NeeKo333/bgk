@@ -606,6 +606,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: scale 0.3s ease 0s;
+
+    &:hover, &:active {
+      scale: (1.02);
+    }
 
     
     @media (max-width: $breakpoint-lg) {
