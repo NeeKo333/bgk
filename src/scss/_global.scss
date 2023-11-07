@@ -1,0 +1,17 @@
+@import "variables.scss";
+@import 'funcs.scss';
+
+.hidden_svg {
+  display: none;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 60px;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint-lg) {
+    max-width: 428px;
+    padding: 0 10px;
+  }
+}
