@@ -1,7 +1,7 @@
 import "./index.html";
 import "./index.scss";
-import { Cards } from "./js/cards";
+import cards from "./js/cards";
 
 window.addEventListener("DOMContentLoaded", () => {
-  Cards.init()
+  cards.init();
 });

@@ -1,5 +1,5 @@
 @import "variables.scss";
-@import 'funcs.scss';
+@import "funcs.scss";
 
 .card {
   margin-top: rem(15);
@@ -9,7 +9,7 @@
   background: #f7f8fd;
 
   @media (max-width: $breakpoint-lg) {
-       padding-bottom: rem(10);
+    padding-bottom: rem(10);
   }
 
   /*-------HEADER---------*/
@@ -27,10 +27,8 @@
       padding: 0 rem(10);
     }
 
-    
     @media (max-width: $breakpoint-sm) {
       padding-right: rem(15);
-      
     }
   }
 
@@ -115,7 +113,6 @@
       @media (max-width: $breakpoint-sm) {
         object-fit: unset;
       }
-  
     }
 
     &-text {
@@ -123,7 +120,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: #FFF;
+      color: #fff;
       font-family: Rubik;
       font-size: rem(14);
       font-style: normal;
@@ -220,17 +217,16 @@
   &__left-side {
     display: flex;
     min-height: 100%;
-    
+
     @media (max-width: $breakpoint-lg) {
       flex-direction: column;
-     
     }
   }
 
   &__left-side {
     width: 41%;
     @media (max-width: $breakpoint-lg) {
-      width: 100% 
+      width: 100%;
     }
   }
 
@@ -238,14 +234,13 @@
     width: 59%;
 
     @media (max-width: $breakpoint-lg) {
-      width: 100%; 
+      width: 100%;
       gap: rem(20);
     }
 
     @media (max-width: $breakpoint-sm) {
       gap: rem(17);
     }
-
   }
 
   &__info {
@@ -282,7 +277,6 @@
       height: rem(60);
     }
 
-    
     @media (max-width: $breakpoint-sm) {
       border-radius: rem(10);
       height: rem(84);
@@ -401,7 +395,7 @@
       @media (max-width: $breakpoint-lg) {
         max-width: 60%;
       }
-     
+
       li {
         &:last-child {
           @media (max-width: $breakpoint-sm) {
@@ -463,9 +457,6 @@
       flex-wrap: nowrap;
       width: 100%;
       column-gap: rem(15);
-      &.active {
-        display: flex;
-      }
     }
 
     @media (max-width: $breakpoint-sm) {
@@ -481,15 +472,14 @@
     background: rgba(235, 236, 245, 0.65);
 
     @media (max-width: $breakpoint-lg) {
-     &:nth-last-child(-n+2) {
-      display: none;
-    }
+      &:nth-last-child(-n + 2) {
+        display: none;
+      }
 
-    @media (max-width: $breakpoint-sm) {
-      width: rem(38);
-      height: rem(23);
-    }
-    
+      @media (max-width: $breakpoint-sm) {
+        width: rem(38);
+        height: rem(23);
+      }
     }
 
     img {
@@ -498,12 +488,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
 
-      
-    @media (max-width: $breakpoint-sm) {
-      width: 60%;
-      height: 60%;
-      object-fit: contain;
-    }
+      @media (max-width: $breakpoint-sm) {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+      }
     }
   }
 
@@ -553,7 +542,6 @@
       cursor: pointer;
     }
 
-
     @media (max-width: $breakpoint-lg) {
       order: 1;
       width: 100%;
@@ -566,12 +554,7 @@
     height: rem(7);
     margin-left: rem(7);
     align-self: center;
-    fill: #0079F0;
-
-    &.active {
-      transform: rotate(180deg);
-      fill: #a6aac3;
-    }
+    fill: #0079f0;
   }
 
   &__btns {
@@ -608,11 +591,11 @@
     line-height: normal;
     transition: scale 0.3s ease 0s;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       scale: (1.02);
     }
 
-    
     @media (max-width: $breakpoint-lg) {
       font-size: rem(12);
       padding: rem(15) rem(57);
@@ -629,7 +612,6 @@
       @media (max-width: $breakpoint-lg) {
         order: 2;
       }
-     
     }
 
     &_read {
@@ -640,7 +622,6 @@
       }
     }
   }
-
 
   /*-------FOOTER---------*/
 
@@ -656,8 +637,8 @@
     }
 
     @media (max-width: $breakpoint-sm) {
-     padding-top: rem(5);
-     gap: rem(10);
+      padding-top: rem(5);
+      gap: rem(10);
     }
 
     &-text {
@@ -730,12 +711,25 @@
         margin-top: rem(-6);
       }
     }
-
-    &.active {
-      display: flex;
-    }
   }
 
   @media (max-width: $breakpoint-lg) {
+  }
+
+  &.active {
+    .card__payments-list {
+      @media (max-width: $breakpoint-lg) {
+        display: flex;
+      }
+    }
+
+    .card__arrow {
+      transform: rotate(180deg);
+      fill: #a6aac3;
+    }
+
+    .card__footer {
+      display: flex;
+    }
   }
 }
