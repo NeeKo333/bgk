@@ -1,6 +1,10 @@
 @import "variables.scss";
 @import "funcs.scss";
 
+table {
+  width: 100%;
+}
+
 .card {
   margin-top: rem(15);
   margin-bottom: rem(10);
