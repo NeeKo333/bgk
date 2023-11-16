@@ -843,7 +843,7 @@ var Card = /*#__PURE__*/function () {
   _createClass(Card, [{
     key: "cardClickHandler",
     value: function cardClickHandler(e) {
-      if (e.target !== this.toggle) return;
+      if (!this.card || !this.toggle || e.target !== this.toggle) return;
       this.card.classList.toggle("active");
       this.toggle.textContent = this.card.classList.contains("active") ? "Hide info" : "More info";
     }
@@ -11838,4 +11838,4 @@ window.addEventListener("DOMContentLoaded", function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=main.6358e1fe94b674c8a59f.js.map
+//# sourceMappingURL=main.881679c26166145a4595.js.map

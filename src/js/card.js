@@ -11,7 +11,7 @@ export class Card {
   }
 
   cardClickHandler(e) {
-    if (e.target !== this.toggle) return;
+    if(!this.card || !this.toggle || e.target !== this.toggle) return;
 
     this.card.classList.toggle("active");
     this.toggle.textContent = this.card.classList.contains("active")
