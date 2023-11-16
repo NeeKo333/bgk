@@ -1,6 +1,6 @@
 import { Card } from "./card";
 
-class Cards {
+class CardList {
   constructor(cardSelector) {
     this.cards = document.querySelectorAll(cardSelector);
   }
@@ -10,4 +10,4 @@ class Cards {
   }
 }
 
-export default new Cards(".card");
+export default new CardList(".card");

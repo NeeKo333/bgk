@@ -872,12 +872,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
-var Cards = /*#__PURE__*/function () {
-  function Cards(cardSelector) {
-    _classCallCheck(this, Cards);
+var CardList = /*#__PURE__*/function () {
+  function CardList(cardSelector) {
+    _classCallCheck(this, CardList);
     this.cards = document.querySelectorAll(cardSelector);
   }
-  _createClass(Cards, [{
+  _createClass(CardList, [{
     key: "init",
     value: function init() {
       this.cards.forEach(function (card) {
@@ -885,9 +885,9 @@ var Cards = /*#__PURE__*/function () {
       });
     }
   }]);
-  return Cards;
+  return CardList;
 }();
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new Cards(".card"));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new CardList(".card"));
 
 /***/ }),
 
@@ -11838,4 +11838,4 @@ window.addEventListener("DOMContentLoaded", function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=main.91ed7da43aea5550e889.js.map
+//# sourceMappingURL=main.6358e1fe94b674c8a59f.js.map
