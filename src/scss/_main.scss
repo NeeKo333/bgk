@@ -8,13 +8,19 @@ table {
 
 .card {
   margin-top: rem(5);
-  margin-bottom: rem(5);
+  margin-bottom: rem(10);
   width: 100%;
   border-radius: rem(15);
   background: #f7f8fd;
 
   @media (max-width: $breakpoint-lg) {
     padding-bottom: rem(15);
+    margin-bottom: rem(5);
+  }
+
+
+  @media (max-width: $breakpoint-sm) {
+    padding-bottom: rem(5);
   }
 
   /*-------HEADER---------*/
@@ -107,7 +113,7 @@ table {
       width: rem(141);
       height: rem(32);
       margin-left: rem(13);
-      margin-top: -7px;
+      margin-top: -4px;
     }
 
     img {
